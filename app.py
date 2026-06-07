@@ -137,9 +137,11 @@ def get_available_templates():
 # --- Streamlit UI ---
 st.set_page_config(page_title="Revision Template Generator", layout="centered")
 
-st.title("📄 Revision Template Generator")
-st.markdown("Upload your original `.docx` template and paste your JSON data below.")
+st.title("📄 Generate Recall Questions from JSON")
 
+st.markdown("Upload a template or use the template from the repository")
+st.markdown(Create the Questions [Using this Gemini Gem](https://gemini.google.com/gem/1CP6tJCFXiPZY-aRzbab-6fUZJyB0ILL4?usp=sharing).)
+st.markdown("It will output a JSON which you should paster in the box below")
 col1, col2 = st.columns(2)
 with col1:
     use_repository_template = st.checkbox("Use template from repository", value=False)
